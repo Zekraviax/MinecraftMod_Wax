@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values":
+  [
+    "wax:liquid_wax_black",
+    "wax:liquid_wax_black_flowing",
+    "wax:liquid_wax_blue",
+    "wax:liquid_wax_blue_flowing"
+  ]
+}

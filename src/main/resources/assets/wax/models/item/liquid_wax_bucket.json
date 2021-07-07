@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "wax:item/liquid_wax_bucket"
+  }
+}
