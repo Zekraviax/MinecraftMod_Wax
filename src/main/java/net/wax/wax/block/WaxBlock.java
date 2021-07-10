@@ -3,7 +3,6 @@ package net.wax.wax.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
@@ -14,10 +13,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.dimension.DimensionType;
 
-import java.awt.*;
 import java.util.Random;
-
-import static net.minecraft.block.SnowBlock.LAYERS;
 
 public class WaxBlock extends Block {
 
@@ -66,7 +62,7 @@ public class WaxBlock extends Block {
     }
 
     public void ChangeHeatValue(BlockState state, WorldAccess world, BlockPos pos, int HeatValue) {
-        int heatInt = (Integer) state.get(HEAT);
+        int heatInt = state.get(HEAT);
 
         if (heatInt + HeatValue > 10) {
             HeatValue = heatInt - 10;
@@ -74,8 +70,19 @@ public class WaxBlock extends Block {
 
         world.setBlockState(pos, state.with(HEAT, heatInt + HeatValue), Block.NO_REDRAW);
 
-        if ((Integer) state.get(HEAT) >= HEAT.getValues().size() - 1) {
-            ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
+        if (state.get(HEAT) >= HEAT.getValues().size() - 1) {
+
+            if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLACK.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLUE.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_BLUE_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BROWN.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_BROWN_BLOCK.getDefaultState();
+            } else {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
+            }
+
+            System.out.println(this.getDefaultState().toString());
 
             replace(state, ReplacementBlock, world, pos, 3);
         }

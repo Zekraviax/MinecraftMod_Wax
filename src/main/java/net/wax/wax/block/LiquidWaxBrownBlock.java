@@ -10,9 +10,9 @@ import java.util.Random;
 
 import static net.minecraft.block.SnowBlock.LAYERS;
 
-public class LiquidWaxBlackBlock extends LiquidWaxBlock {
+public class LiquidWaxBrownBlock extends LiquidWaxBlock {
 
-    protected LiquidWaxBlackBlock(FlowableFluid fluid, Settings settings) {
+    protected LiquidWaxBrownBlock(FlowableFluid fluid, Settings settings) {
         super(fluid, settings);
     }
 
@@ -24,14 +24,12 @@ public class LiquidWaxBlackBlock extends LiquidWaxBlock {
         if ((Integer) state.get(DRYNESS) >= DRYNESS.getValues().size() - 1) {
             int fluidLevel = state.get(LEVEL);
 
-            //System.out.println(this.toString() + " Dried up: (fluidLevel:" + fluidLevel + ")");
-
             if (fluidLevel > 8)
-                ReplacementBlock = ModBlocks.WAX_SHEET_BLACK.getDefaultState().with(LAYERS, 0);
+                ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, 0);
             else if (fluidLevel == 0)
-                ReplacementBlock = ModBlocks.WAX_SHEET_BLACK.getDefaultState().with(LAYERS, 8);
+                ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, 8);
             else
-                ReplacementBlock = ModBlocks.WAX_SHEET_BLACK.getDefaultState().with(LAYERS, 8 - fluidLevel);
+                ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, 8 - fluidLevel);
 
 
             replace(state, ReplacementBlock, world, pos, 3);

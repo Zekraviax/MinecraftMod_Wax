@@ -1,9 +1,21 @@
 {
   "itemGroup.wax.wax_item_group": "Wax!",
 
+
   "block.wax.wax_block_black": "Black Wax Block",
+  "block.wax.wax_block_blue": "Blue Wax Block",
+  "block.wax.wax_block_brown": "Brown Wax Block",
+
   "block.wax.wax_sheet_black": "Black Wax Sheet",
+  "block.wax.wax_sheet_blue": "Blue Wax Sheet",
+  "block.wax.wax_sheet_brown": "Brown Wax Sheet",
+
+
+  "item.wax.wax_flake_black": "Black Wax Flake",
+  "item.wax.wax_flake_blue": "Blue Wax Flake",
+  "item.wax.wax_flake_brown": "Brown Wax Flake",
 
   "item.wax.liquid_wax_black_bucket": "Black Liquid Wax Bucket",
-  "item.wax.liquid_wax_blue_bucket": "Blue Liquid Wax Bucket"
+  "item.wax.liquid_wax_blue_bucket": "Blue Liquid Wax Bucket",
+  "item.wax.liquid_wax_brown_bucket": "Brown Liquid Wax Bucket"
 }
