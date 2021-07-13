@@ -27,12 +27,28 @@ import java.util.function.Function;
 public class WaxModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-       setupFluidRendering(ModFluids.LIQUID_WAX_BLACK, ModFluids.LIQUID_WAX_BLACK_FLOWING, new Identifier("wax", "liquid_wax"), 0x000000);
-       setupFluidRendering(ModFluids.LIQUID_WAX_BLUE, ModFluids.LIQUID_WAX_BLUE_FLOWING, new Identifier("wax", "liquid_wax"), 0x0000FF);
+       setupFluidRendering(ModFluids.LIQUID_WAX_BLACK, ModFluids.LIQUID_WAX_BLACK_FLOWING, new Identifier("wax", "liquid_wax"), 0x2b2b2b);
+       setupFluidRendering(ModFluids.LIQUID_WAX_BLUE, ModFluids.LIQUID_WAX_BLUE_FLOWING, new Identifier("wax", "liquid_wax"), 0x4756ed);
+       setupFluidRendering(ModFluids.LIQUID_WAX_BROWN, ModFluids.LIQUID_WAX_BROWN_FLOWING, new Identifier("wax", "liquid_wax"), 0x82603d);
+       setupFluidRendering(ModFluids.LIQUID_WAX_CYAN, ModFluids.LIQUID_WAX_CYAN_FLOWING, new Identifier("wax", "liquid_wax"), 0x06d5a3);
+       setupFluidRendering(ModFluids.LIQUID_WAX_GRAY, ModFluids.LIQUID_WAX_GRAY_FLOWING, new Identifier("wax", "liquid_wax"), 0x6d6d6d);
+       setupFluidRendering(ModFluids.LIQUID_WAX_GREEN, ModFluids.LIQUID_WAX_GREEN_FLOWING, new Identifier("wax", "liquid_wax"), 0x1dd54e);
+       setupFluidRendering(ModFluids.LIQUID_WAX_LIGHT_BLUE, ModFluids.LIQUID_WAX_LIGHT_BLUE_FLOWING, new Identifier("wax", "liquid_wax"), 0x17caed);
+       setupFluidRendering(ModFluids.LIQUID_WAX_LIGHT_GRAY, ModFluids.LIQUID_WAX_LIGHT_GRAY_FLOWING, new Identifier("wax", "liquid_wax"), 0xc3c3c3);
+       setupFluidRendering(ModFluids.LIQUID_WAX_LIME, ModFluids.LIQUID_WAX_LIME_FLOWING, new Identifier("wax", "liquid_wax"), 0xb0cc00);
+       setupFluidRendering(ModFluids.LIQUID_WAX_MAGENTA, ModFluids.LIQUID_WAX_MAGENTA_FLOWING, new Identifier("wax", "liquid_wax"), 0xed47e9);
 
        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getSolid(),
        ModFluids.LIQUID_WAX_BLACK, ModFluids.LIQUID_WAX_BLACK_FLOWING,
-       ModFluids.LIQUID_WAX_BLUE, ModFluids.LIQUID_WAX_BLUE_FLOWING);
+       ModFluids.LIQUID_WAX_BLUE, ModFluids.LIQUID_WAX_BLUE_FLOWING,
+       ModFluids.LIQUID_WAX_BROWN, ModFluids.LIQUID_WAX_BROWN_FLOWING,
+       ModFluids.LIQUID_WAX_CYAN, ModFluids.LIQUID_WAX_CYAN_FLOWING,
+       ModFluids.LIQUID_WAX_GRAY, ModFluids.LIQUID_WAX_GRAY_FLOWING,
+       ModFluids.LIQUID_WAX_GREEN, ModFluids.LIQUID_WAX_GREEN_FLOWING,
+       ModFluids.LIQUID_WAX_LIGHT_BLUE, ModFluids.LIQUID_WAX_LIGHT_BLUE_FLOWING,
+       ModFluids.LIQUID_WAX_LIGHT_GRAY, ModFluids.LIQUID_WAX_LIGHT_GRAY_FLOWING,
+       ModFluids.LIQUID_WAX_LIME, ModFluids.LIQUID_WAX_LIME_FLOWING,
+       ModFluids.LIQUID_WAX_MAGENTA, ModFluids.LIQUID_WAX_MAGENTA_FLOWING);
     }
 
     public static void setupFluidRendering(final Fluid still, final Fluid flowing, final Identifier textureFluidId, final int colour) {

@@ -31,7 +31,6 @@ public class LiquidWaxBlueBlock extends LiquidWaxBlock {
             else
                 ReplacementBlock = ModBlocks.WAX_SHEET_BLUE.getDefaultState().with(LAYERS, 8 - fluidLevel);
 
-
             replace(state, ReplacementBlock, world, pos, 3);
         } else {
             world.setBlockState(pos, state.with(DRYNESS, drynessInt + 1), Block.NO_REDRAW);

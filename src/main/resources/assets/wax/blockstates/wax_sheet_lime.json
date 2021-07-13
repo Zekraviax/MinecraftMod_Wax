@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "layers=1": {
+      "model": "wax:block/wax_sheet_lime_height2"
+    },
+    "layers=2": {
+      "model": "wax:block/wax_sheet_lime_height4"
+    },
+    "layers=3": {
+      "model": "wax:block/wax_sheet_lime_height6"
+    },
+    "layers=4": {
+      "model": "wax:block/wax_sheet_lime_height8"
+    },
+    "layers=5": {
+      "model": "wax:block/wax_sheet_lime_height10"
+    },
+    "layers=6": {
+      "model": "wax:block/wax_sheet_lime_height12"
+    },
+    "layers=7": {
+      "model": "wax:block/wax_sheet_lime_height14"
+    },
+    "layers=8": {
+      "model": "wax:block/wax_block_lime"
+    }
+  }
+}

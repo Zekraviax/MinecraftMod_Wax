@@ -29,8 +29,7 @@ public class LiquidWaxBrownBlock extends LiquidWaxBlock {
             else if (fluidLevel == 0)
                 ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, 8);
             else
-                ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, 8 - fluidLevel);
-
+                ReplacementBlock = ModBlocks.WAX_SHEET_BROWN.getDefaultState().with(LAYERS, (8 - fluidLevel) + 1);
 
             replace(state, ReplacementBlock, world, pos, 3);
         } else {

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wax:block/liquid_wax_still"
+    }
+  }
+}

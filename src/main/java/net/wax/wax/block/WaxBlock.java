@@ -33,11 +33,11 @@ public class WaxBlock extends Block {
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        System.out.println("Dimension: " + world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID).toString());
+        //System.out.println("Dimension: " + world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID).toString());
 
         if (world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID) == world.getDimension()) {
             ChangeHeatValue(state, world, pos, 4);
-            System.out.println("Dimension: THE NETHER");
+            //System.out.println("Dimension: THE NETHER");
         }
 
         super.scheduledTick(state, world, pos, random);
@@ -78,6 +78,16 @@ public class WaxBlock extends Block {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLUE_BLOCK.getDefaultState();
             } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BROWN.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BROWN_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_CYAN.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_CYAN_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_GRAY.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_GRAY_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_GREEN.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_GREEN_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_LIGHT_BLUE.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_LIGHT_BLUE_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_LIGHT_GRAY.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_LIGHT_GRAY_BLOCK.getDefaultState();
             } else {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
             }
