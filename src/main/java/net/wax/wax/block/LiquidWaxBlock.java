@@ -28,7 +28,7 @@ public class LiquidWaxBlock extends AbstractFluidBlock {
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        world.getBlockTickScheduler().schedule(pos, this, 1);
+        world.getBlockTickScheduler().schedule(pos, this, 30);
 
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }

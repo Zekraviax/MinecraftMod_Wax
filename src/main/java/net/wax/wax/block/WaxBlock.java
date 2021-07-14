@@ -19,6 +19,7 @@ public class WaxBlock extends Block {
 
     // Wax blocks melt into liquid when exposed to 'heat'.
     public static final IntProperty HEAT = IntProperty.of("dryness", 0, 10);
+    public int neighbouringHeatValues = 0;
 
     public BlockState ReplacementBlock;
 
@@ -33,27 +34,41 @@ public class WaxBlock extends Block {
 
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        //System.out.println("Dimension: " + world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID).toString());
+        if (neighbouringHeatValues > 0) {
+            int heatInt = state.get(HEAT);
 
-        if (world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID) == world.getDimension()) {
-            ChangeHeatValue(state, world, pos, 4);
-            //System.out.println("Dimension: THE NETHER");
+            System.out.println("Current Heat: " + heatInt);
+            System.out.println("Total Neighbouring Heat Value: " + neighbouringHeatValues);
+
+            ChangeHeatValue(state, world, pos, neighbouringHeatValues);
+
+            world.getBlockTickScheduler().schedule(pos, this, 30);
         }
 
         super.scheduledTick(state, world, pos, random);
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        neighbouringHeatValues = 0;
+
         if (neighborState.getBlock() == Blocks.LAVA ||
             neighborState.getFluidState().getFluid() == Fluids.LAVA ||
             neighborState.getFluidState().getFluid() == Fluids.FLOWING_LAVA) {
-            ChangeHeatValue(state, world, pos, 5);
+            neighbouringHeatValues += 4;
+            //ChangeHeatValue(state, world, pos, 5);
         } else if (neighborState.getBlock() == Blocks.CAMPFIRE ||
             neighborState.getBlock() == Blocks.FIRE) {
-            ChangeHeatValue(state, world, pos, 3);
+            neighbouringHeatValues += 2;
+            //ChangeHeatValue(state, world, pos, 3);
         } else if (neighborState.getBlock() == Blocks.TORCH ||
             neighborState.getBlock() == Blocks.LANTERN) {
-            ChangeHeatValue(state, world, pos, 1);
+            neighbouringHeatValues++;
+            //ChangeHeatValue(state, world, pos, 1);
+        }
+
+        if (world.getRegistryManager().get(Registry.DIMENSION_TYPE_KEY).get(DimensionType.THE_NETHER_ID) == world.getDimension()) {
+            neighbouringHeatValues += 3;
+            //ChangeHeatValue(state, world, pos, 4);
         }
 
         world.getBlockTickScheduler().schedule(pos, this, 1);
@@ -67,6 +82,11 @@ public class WaxBlock extends Block {
         if (heatInt + HeatValue > 10) {
             HeatValue = heatInt - 10;
         }
+
+        /*
+        System.out.println("Heat Int: " + heatInt);
+        System.out.println("Heat Value: " + HeatValue);
+         */
 
         world.setBlockState(pos, state.with(HEAT, heatInt + HeatValue), Block.NO_REDRAW);
 
@@ -106,8 +126,6 @@ public class WaxBlock extends Block {
             }else {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_UNCOLOURED_BLOCK.getDefaultState();
             }
-
-            System.out.println(this.getDefaultState().toString());
 
             replace(state, ReplacementBlock, world, pos, 3);
         }
