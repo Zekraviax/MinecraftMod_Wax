@@ -71,7 +71,6 @@ public class WaxBlock extends Block {
         world.setBlockState(pos, state.with(HEAT, heatInt + HeatValue), Block.NO_REDRAW);
 
         if (state.get(HEAT) >= HEAT.getValues().size() - 1) {
-
             if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLACK.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
             } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLUE.getDefaultState()) {
@@ -88,8 +87,24 @@ public class WaxBlock extends Block {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_LIGHT_BLUE_BLOCK.getDefaultState();
             } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_LIGHT_GRAY.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_LIGHT_GRAY_BLOCK.getDefaultState();
-            } else {
-                ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_LIME.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_LIME_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_MAGENTA.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_MAGENTA_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_ORANGE.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_ORANGE_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_PINK.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_PINK_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_PURPLE.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_PURPLE_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_RED.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_RED_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_WHITE.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_WHITE_BLOCK.getDefaultState();
+            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_YELLOW.getDefaultState()) {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_YELLOW_BLOCK.getDefaultState();
+            }else {
+                ReplacementBlock = ModBlocks.LIQUID_WAX_UNCOLOURED_BLOCK.getDefaultState();
             }
 
             System.out.println(this.getDefaultState().toString());

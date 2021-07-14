@@ -12,6 +12,13 @@
   "block.wax.wax_block_light_gray": "Light Gray Wax Block",
   "block.wax.wax_block_lime": "Lime Wax Block",
   "block.wax.wax_block_magenta": "Magenta Wax Block",
+  "block.wax.wax_block_orange": "Orange Wax Block",
+  "block.wax.wax_block_pink": "Pink Wax Block",
+  "block.wax.wax_block_purple": "Purple Wax Block",
+  "block.wax.wax_block_red": "Red Wax Block",
+  "block.wax.wax_block_uncoloured": "Wax Block",
+  "block.wax.wax_block_white": "White Wax Block",
+  "block.wax.wax_block_yellow": "Yellow Wax Block",
 
   "block.wax.wax_sheet_black": "Black Wax Sheet",
   "block.wax.wax_sheet_blue": "Blue Wax Sheet",
@@ -23,6 +30,13 @@
   "block.wax.wax_sheet_light_gray": "Light Gray Wax Sheet",
   "block.wax.wax_sheet_lime": "Lime Wax Sheet",
   "block.wax.wax_sheet_magenta": "Magenta Wax Sheet",
+  "block.wax.wax_sheet_orange": "Orange Wax Sheet",
+  "block.wax.wax_sheet_pink": "Pink Wax Sheet",
+  "block.wax.wax_sheet_purple": "Purple Wax Sheet",
+  "block.wax.wax_sheet_red": "Red Wax Sheet",
+  "block.wax.wax_sheet_uncoloured": "Wax Sheet",
+  "block.wax.wax_sheet_white": "White Wax Sheet",
+  "block.wax.wax_sheet_yellow": "Yellow Wax Sheet",
 
 
   "item.wax.wax_flake_black": "Black Wax Flake",
@@ -35,6 +49,13 @@
   "item.wax.wax_flake_light_gray": "Light Gray Wax Flake",
   "item.wax.wax_flake_lime": "Lime Wax Flake",
   "item.wax.wax_flake_magenta": "Magenta Wax Flake",
+  "item.wax.wax_flake_orange": "Orange Wax Flake",
+  "item.wax.wax_flake_pink": "Pink Wax Flake",
+  "item.wax.wax_flake_purple": "Purple Wax Flake",
+  "item.wax.wax_flake_red": "Red Wax Flake",
+  "item.wax.wax_flake_uncoloured": "Wax Flake",
+  "item.wax.wax_flake_white": "White Wax Flake",
+  "item.wax.wax_flake_yellow": "Yellow Wax Flake",
 
   "item.wax.liquid_wax_black_bucket": "Black Liquid Wax Bucket",
   "item.wax.liquid_wax_blue_bucket": "Blue Liquid Wax Bucket",
@@ -45,5 +66,12 @@
   "item.wax.liquid_wax_light_blue_bucket": "Light Blue Liquid Wax Bucket",
   "item.wax.liquid_wax_light_gray_bucket": "Light Gray Liquid Wax Bucket",
   "item.wax.liquid_wax_lime_bucket": "Lime Liquid Wax Bucket",
-  "item.wax.liquid_wax_magenta_bucket": "Magenta Liquid Wax Bucket"
+  "item.wax.liquid_wax_magenta_bucket": "Magenta Liquid Wax Bucket",
+  "item.wax.liquid_wax_orange_bucket": "Orange Liquid Wax Bucket",
+  "item.wax.liquid_wax_pink_bucket": "Pink Liquid Wax Bucket",
+  "item.wax.liquid_wax_purple_bucket": "Purple Liquid Wax Bucket",
+  "item.wax.liquid_wax_red_bucket": "Red Liquid Wax Bucket",
+  "item.wax.liquid_wax_uncoloured_bucket": "Liquid Wax Bucket",
+  "item.wax.liquid_wax_white_bucket": "White Liquid Wax Bucket",
+  "item.wax.liquid_wax_yellow_bucket": "Yellow Liquid Wax Bucket"
 }

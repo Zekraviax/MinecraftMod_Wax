@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "wax:block/liquid_wax_still"
+      "model": "wax:block/liquid_wax_black"
     }
   }
 }

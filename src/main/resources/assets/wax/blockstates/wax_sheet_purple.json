@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "layers=1": {
+      "model": "wax:block/wax_sheet_purple_height2"
+    },
+    "layers=2": {
+      "model": "wax:block/wax_sheet_purple_height4"
+    },
+    "layers=3": {
+      "model": "wax:block/wax_sheet_purple_height6"
+    },
+    "layers=4": {
+      "model": "wax:block/wax_sheet_purple_height8"
+    },
+    "layers=5": {
+      "model": "wax:block/wax_sheet_purple_height10"
+    },
+    "layers=6": {
+      "model": "wax:block/wax_sheet_purple_height12"
+    },
+    "layers=7": {
+      "model": "wax:block/wax_sheet_purple_height14"
+    },
+    "layers=8": {
+      "model": "wax:block/wax_block_purple"
+    }
+  }
+}
