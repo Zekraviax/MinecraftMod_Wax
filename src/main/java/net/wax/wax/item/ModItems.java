@@ -1,5 +1,6 @@
 package net.wax.wax.item;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -61,6 +62,8 @@ public class ModItems {
     public static final Item LIQUID_WAX_YELLOW_BUCKET = new BucketItem(ModFluids.LIQUID_WAX_YELLOW, new Item.Settings().group(Wax.WAX_ITEM_GROUP).
             recipeRemainder(Items.BUCKET).maxCount(1));
 
+    public static final Item WAX_WINGS = new WaxWings(new Item.Settings().maxDamage(432).group(Wax.WAX_ITEM_GROUP));
+
     public static void RegisterItems() {
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_flake_black"), WAX_FLAKE_BLACK);
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_flake_blue"), WAX_FLAKE_BLUE);
@@ -97,5 +100,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier("wax", "liquid_wax_uncoloured_bucket"), LIQUID_WAX_UNCOLOURED_BUCKET);
         Registry.register(Registry.ITEM, new Identifier("wax", "liquid_wax_white_bucket"), LIQUID_WAX_WHITE_BUCKET);
         Registry.register(Registry.ITEM, new Identifier("wax", "liquid_wax_yellow_bucket"), LIQUID_WAX_YELLOW_BUCKET);
+
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_wings"), WAX_WINGS);
     }
 }
