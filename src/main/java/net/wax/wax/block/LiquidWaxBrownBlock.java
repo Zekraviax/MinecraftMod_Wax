@@ -19,9 +19,9 @@ public class LiquidWaxBrownBlock extends LiquidWaxBlock {
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         super.scheduledTick(state, world, pos, random);
-        int drynessInt = (Integer) state.get(DRYNESS);
+        int drynessInt = state.get(DRYNESS);
 
-        if ((Integer) state.get(DRYNESS) >= DRYNESS.getValues().size() - 1) {
+        if (state.get(DRYNESS) >= DRYNESS.getValues().size() - 1) {
             int fluidLevel = state.get(LEVEL);
 
             if (fluidLevel > 8)

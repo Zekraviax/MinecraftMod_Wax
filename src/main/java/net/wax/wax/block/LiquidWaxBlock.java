@@ -19,7 +19,7 @@ public class LiquidWaxBlock extends AbstractFluidBlock {
 
     protected LiquidWaxBlock(FlowableFluid fluid, Settings settings) {
         super(fluid, settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(DRYNESS, 1));
+        this.setDefaultState(this.stateManager.getDefaultState().with(DRYNESS, 1));
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {

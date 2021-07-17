@@ -1,14 +1,14 @@
 package net.wax.wax.item;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.*;
+import net.minecraft.item.BucketItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.wax.wax.Wax;
 import net.wax.wax.fluid.ModFluids;
 
 public class ModItems {
-
     public static final Item WAX_FLAKE_BLACK = new Item(new Item.Settings().group(Wax.WAX_ITEM_GROUP));
     public static final Item WAX_FLAKE_BLUE = new Item(new Item.Settings().group(Wax.WAX_ITEM_GROUP));
     public static final Item WAX_FLAKE_BROWN = new Item(new Item.Settings().group(Wax.WAX_ITEM_GROUP));
@@ -101,6 +101,14 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier("wax", "liquid_wax_white_bucket"), LIQUID_WAX_WHITE_BUCKET);
         Registry.register(Registry.ITEM, new Identifier("wax", "liquid_wax_yellow_bucket"), LIQUID_WAX_YELLOW_BUCKET);
 
-        Registry.register(Registry.ITEM, new Identifier("wax", "wax_wings"), WAX_WINGS);
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_wings"), ModItems.WAX_WINGS);
+
+        /*
+        System.out.println("Is Multi-Item-Lib present? " + FabricLoader.getInstance().isModLoaded("multi-item-lib"));
+
+        if (FabricLoader.getInstance().isModLoaded("multi-item-lib")) {
+            UniqueItemRegistry.ELYTRA.addItemToRegistry(ModItems.WAX_WINGS);
+        }
+        */
     }
 }

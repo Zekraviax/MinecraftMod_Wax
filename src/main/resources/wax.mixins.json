@@ -4,9 +4,11 @@
   "package": "net.wax.wax.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "LivingEntityMixin",
+    "PlayerEntityMixin"
   ],
   "client": [
-
+    "ClientPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
