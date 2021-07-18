@@ -73,5 +73,10 @@
   "item.wax.liquid_wax_red_bucket": "Red Liquid Wax Bucket",
   "item.wax.liquid_wax_uncoloured_bucket": "Liquid Wax Bucket",
   "item.wax.liquid_wax_white_bucket": "White Liquid Wax Bucket",
-  "item.wax.liquid_wax_yellow_bucket": "Yellow Liquid Wax Bucket"
+  "item.wax.liquid_wax_yellow_bucket": "Yellow Liquid Wax Bucket",
+
+  "item.wax.wax_wings": "Wings of Wax",
+
+  "advancements.wax.icarus": "Icarus",
+  "advancements.wax.icarus.description": "Flew too close to the sun..."
 }

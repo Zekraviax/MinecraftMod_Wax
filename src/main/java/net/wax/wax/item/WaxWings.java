@@ -1,6 +1,8 @@
 package net.wax.wax.item;
 
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
@@ -31,7 +33,6 @@ public class WaxWings extends ElytraItem implements Wearable {
         ItemStack itemStack = user.getStackInHand(hand);
         EquipmentSlot equipmentSlot = EquipmentSlot.CHEST;
         ItemStack itemStack2 = user.getEquippedStack(equipmentSlot);
-
         if (itemStack2.isEmpty()) {
             user.equipStack(equipmentSlot, itemStack.copy());
             if (!world.isClient()) {
