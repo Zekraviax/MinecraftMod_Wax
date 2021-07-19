@@ -37,6 +37,11 @@
                 },
                 {
                   "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_count",
+                  "count": 9.0,
+                  "add": false
                 }
               ],
               "name": "wax:wax_flake_gray"

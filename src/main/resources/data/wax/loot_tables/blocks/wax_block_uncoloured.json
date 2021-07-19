@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "wax:wax_block_green"
+              "name": "wax:wax_block_uncoloured"
             },
             {
               "type": "minecraft:item",
@@ -44,7 +44,7 @@
                   "add": false
                 }
               ],
-              "name": "wax:wax_flake_green"
+              "name": "wax:wax_flake_uncoloured"
             }
           ]
         }

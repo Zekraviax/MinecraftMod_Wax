@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "wax:wax_flake_light_blue"
+    }
+  },
+  "result": {
+    "item": "wax:wax_block_light_blue"
+  }
+}

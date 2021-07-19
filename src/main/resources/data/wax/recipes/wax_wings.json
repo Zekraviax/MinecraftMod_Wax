@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F F",
+    "WNW",
+    "ISI"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:feather"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "W": {
+      "item": "wax:wax_flake_uncoloured"
+    }
+  },
+  "result": {
+    "item": "wax:wax_wings"
+  }
+}

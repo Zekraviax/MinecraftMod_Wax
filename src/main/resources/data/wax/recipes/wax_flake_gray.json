@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wax:wax_block_gray"
+    }
+  ],
+  "result": {
+    "item": "wax:wax_flake_gray",
+    "count": 9
+  }
+}
