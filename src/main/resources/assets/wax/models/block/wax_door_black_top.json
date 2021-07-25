@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "wax:block/wax_door_black_top",
+    "bottom": "wax:block/wax_door_black_bottom"
+  }
+}

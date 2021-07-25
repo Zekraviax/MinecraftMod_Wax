@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.wax.wax.Wax;
@@ -66,6 +67,10 @@ public class ModBlocks {
     public static Block WAX_SHEET_WHITE = new WaxSheet(FabricBlockSettings.copy(Blocks.SNOW));
     public static Block WAX_SHEET_YELLOW = new WaxSheet(FabricBlockSettings.copy(Blocks.SNOW));
 
+    public static Block WAX_STAIRS_BLACK = new WaxStairs(WAX_BLOCK_BLACK.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+
+    public static Block WAX_DOOR_BLACK = new WaxDoor(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f).nonOpaque());
+
     public static void RegisterBlocks() {
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_block_black"), WAX_BLOCK_BLACK);
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_block_blue"), WAX_BLOCK_BLUE);
@@ -120,6 +125,10 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_sheet_uncoloured"), WAX_SHEET_UNCOLOURED);
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_sheet_white"), WAX_SHEET_WHITE);
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_sheet_yellow"), WAX_SHEET_YELLOW);
+
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_black"), WAX_STAIRS_BLACK);
+
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_door_black"), WAX_DOOR_BLACK);
 
         // Block Items
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_block_black"),
@@ -191,5 +200,11 @@ public class ModBlocks {
                 new BlockItem(WAX_SHEET_WHITE, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_sheet_yellow"),
                 new BlockItem(WAX_SHEET_YELLOW, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_black"),
+                new BlockItem(WAX_STAIRS_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_door_black"),
+                new TallBlockItem(WAX_DOOR_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
     }
 }
