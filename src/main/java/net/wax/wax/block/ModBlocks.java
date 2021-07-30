@@ -71,6 +71,10 @@ public class ModBlocks {
 
     public static Block WAX_DOOR_BLACK = new WaxDoor(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f).nonOpaque());
 
+    public static Block WAX_FENCE_BLACK = new WaxFence(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+
+    public static Block WAX_FENCE_GATE_BLACK = new WaxFenceGate(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+
     public static void RegisterBlocks() {
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_block_black"), WAX_BLOCK_BLACK);
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_block_blue"), WAX_BLOCK_BLUE);
@@ -129,6 +133,10 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_black"), WAX_STAIRS_BLACK);
 
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_door_black"), WAX_DOOR_BLACK);
+
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_fence_black"), WAX_FENCE_BLACK);
+
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_fence_gate_black"), WAX_FENCE_GATE_BLACK);
 
         // Block Items
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_block_black"),
@@ -206,5 +214,11 @@ public class ModBlocks {
 
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_door_black"),
                 new TallBlockItem(WAX_DOOR_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_fence_black"),
+                new TallBlockItem(WAX_FENCE_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_fence_gate_black"),
+                new TallBlockItem(WAX_FENCE_GATE_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
     }
 }

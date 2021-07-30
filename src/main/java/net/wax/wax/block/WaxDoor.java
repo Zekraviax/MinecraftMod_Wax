@@ -78,7 +78,7 @@ public class WaxDoor extends DoorBlock {
         world.setBlockState(pos, state.with(HEAT, heatInt + HeatValue), Block.NO_REDRAW);
 
         if (state.get(HEAT) >= HEAT.getValues().size() - 1) {
-            if (this.getDefaultState() == ModBlocks.WAX_STAIRS_BLACK.getDefaultState()) {
+            if (this.getDefaultState() == ModBlocks.WAX_DOOR_BLACK.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
             /*} else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLUE.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLUE_BLOCK.getDefaultState();
