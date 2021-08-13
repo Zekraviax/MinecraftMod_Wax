@@ -68,6 +68,11 @@ public class ModBlocks {
     public static Block WAX_SHEET_YELLOW = new WaxSheet(FabricBlockSettings.copy(Blocks.SNOW));
 
     public static Block WAX_STAIRS_BLACK = new WaxStairs(WAX_BLOCK_BLACK.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+    public static Block WAX_STAIRS_BLUE = new WaxStairs(WAX_BLOCK_BLUE.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+    public static Block WAX_STAIRS_BROWN = new WaxStairs(WAX_BLOCK_BROWN.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+    public static Block WAX_STAIRS_CYAN = new WaxStairs(WAX_BLOCK_CYAN.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+    public static Block WAX_STAIRS_GRAY = new WaxStairs(WAX_BLOCK_GRAY.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
+    public static Block WAX_STAIRS_GREEN = new WaxStairs(WAX_BLOCK_GREEN.getDefaultState(), FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f));
 
     public static Block WAX_DOOR_BLACK = new WaxDoor(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(0.1f).nonOpaque());
 
@@ -131,6 +136,11 @@ public class ModBlocks {
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_sheet_yellow"), WAX_SHEET_YELLOW);
 
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_black"), WAX_STAIRS_BLACK);
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_blue"), WAX_STAIRS_BLUE);
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_brown"), WAX_STAIRS_BROWN);
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_cyan"), WAX_STAIRS_CYAN);
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_gray"), WAX_STAIRS_GRAY);
+        Registry.register(Registry.BLOCK, new Identifier("wax", "wax_stairs_green"), WAX_STAIRS_GREEN);
 
         Registry.register(Registry.BLOCK, new Identifier("wax", "wax_door_black"), WAX_DOOR_BLACK);
 
@@ -211,6 +221,16 @@ public class ModBlocks {
 
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_black"),
                 new BlockItem(WAX_STAIRS_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_blue"),
+                new BlockItem(WAX_STAIRS_BLUE, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_brown"),
+                new BlockItem(WAX_STAIRS_BROWN, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_cyan"),
+                new BlockItem(WAX_STAIRS_CYAN, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_gray"),
+                new BlockItem(WAX_STAIRS_GRAY, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
+        Registry.register(Registry.ITEM, new Identifier("wax", "wax_stairs_green"),
+                new BlockItem(WAX_STAIRS_GREEN, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));
 
         Registry.register(Registry.ITEM, new Identifier("wax", "wax_door_black"),
                 new TallBlockItem(WAX_DOOR_BLACK, new FabricItemSettings().group(Wax.WAX_ITEM_GROUP)));

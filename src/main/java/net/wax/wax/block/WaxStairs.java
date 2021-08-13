@@ -79,9 +79,9 @@ public class WaxStairs extends StairsBlock {
         if (state.get(HEAT) >= HEAT.getValues().size() - 1) {
             if (this.getDefaultState() == ModBlocks.WAX_STAIRS_BLACK.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLACK_BLOCK.getDefaultState();
-            /*} else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BLUE.getDefaultState()) {
+            } else if (this.getDefaultState() == ModBlocks.WAX_STAIRS_BLUE.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BLUE_BLOCK.getDefaultState();
-            } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BROWN.getDefaultState()) {
+            /*} else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_BROWN.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_BROWN_BLOCK.getDefaultState();
             } else if (this.getDefaultState() == ModBlocks.WAX_BLOCK_CYAN.getDefaultState()) {
                 ReplacementBlock = ModBlocks.LIQUID_WAX_CYAN_BLOCK.getDefaultState();

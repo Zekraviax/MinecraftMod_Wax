@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "wax:wax_stairs_black",
+    "wax:wax_stairs_blue",
+    "wax:wax_stairs_brown",
+    "wax:wax_stairs_cyan",
+    "wax:wax_stairs_gray",
+    "wax:wax_stairs_green"
+  ]
+}

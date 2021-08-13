@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values":
+  [
+    "wax:liquid_wax_black",
+    "wax:liquid_wax_black_flowing",
+    "wax:liquid_wax_blue",
+    "wax:liquid_wax_blue_flowing",
+    "wax:liquid_wax_brown",
+    "wax:liquid_wax_brown_flowing",
+    "wax:liquid_wax_cyan",
+    "wax:liquid_wax_cyan_flowing",
+    "wax:liquid_wax_gray",
+    "wax:liquid_wax_gray_flowing",
+    "wax:liquid_wax_green",
+    "wax:liquid_wax_green_flowing"
+  ]
+}
